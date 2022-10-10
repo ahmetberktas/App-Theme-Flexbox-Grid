@@ -1,0 +1,227 @@
+body{
+    font-family: sans-serif; /* Yazı Tipi */
+    font-size: 17px; /* Yazı Büyüklüğü */
+    line-height: 1.em;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    margin: auto;
+}
+
+.primary-text{
+    color: #56a79a;
+}
+
+.primary-background{
+    background:#56a79a;
+}
+
+/* Header */
+#main-header{
+    border-bottom: 1px solid #56a79a; /* Header Alt Kenar Özellikleri */
+}
+
+/* Navbar */
+#navbar{
+    text-transform: uppercase; /* Navbardaki Yazıların Hepsini Büyük Harf Yapıyor */
+}
+
+#navbar li{
+    display: inline; /* Navbardaki yazıları yan yana getiriyor */
+    padding-right: 20px; /* Navbardaki Yazıların Arasındaki Mesafeyi Artırıyor. */
+    list-style: none;
+}
+
+#navbar a{
+    text-decoration: none; /* Alt Çizgiler Silindi */
+    color: #888; /* Renkler Değişti */
+}
+
+#navbar li.current a, #navbar a:hover{
+    color: #56a79a; /* Bulunan Sayfanın Yazı Rengi ve Hover Rengi */
+    border-bottom: 3px solid #56a79a; /* Yazıların altına border verildi */
+    padding-bottom: 3px; /* Alttan boşluk veriyor */
+}
+
+/* Showcase */
+
+#showcase{
+    background: url('../images/showcase1.jpg') no-repeat center center;
+    border-bottom: 1px solid #56a79a;
+    margin-bottom: 30px;
+}
+
+#showcase .row{
+    height: 400px;
+}
+
+#showcase h1{
+    font-size: 50px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+#showcase p{
+    color: #ccc;
+    margin: 0;
+}
+
+#showcase .showcase-content{
+    background: #333; /* Ortadaki Yazının Arka Plan Rengi Değişiyor */
+    color: #fff;
+    border-radius: 90px;
+    padding: 40px; /* Kenar Boşlukları 40px olarak veriliyor */
+    opacity: 0.9; /* Saydamlaştırıyor, Koyuluğu gideriyor */
+}
+
+/* Features */
+#features h2{
+    font-size: 35px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#features p{
+    color: #888;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+#features i{
+    font-size: 60px;
+    color: #56a79a;
+}
+
+/* Info */
+#info{
+    background:#333 url('../images/info-bg.jpg') no-repeat;
+    color: #fff;
+}
+
+#info h2{
+    font-size: 35px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#info ul{
+    list-style: none;
+    padding: 0;
+}
+
+#info li{
+    line-height: 2em;
+    font-size: 20px;
+}
+
+/* Company */
+#company{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+#company h4{
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#company ul{
+    padding: 0;
+    list-style: none;
+    line-height: 2em;
+}
+
+#company input[type="text"]{
+    padding: 7px;
+}
+
+#company button{
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    border: 0;
+}
+
+/* Footer */
+
+#main-footer{
+    background: #56a79a;
+    color: #fff;
+}
+
+/* Page */
+#page{
+    margin-bottom: 40px;
+}
+
+/* Services */
+.services ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.services ul li:nth-child(odd){
+    background: #333;
+    color: #fff;
+}
+
+.services ul li:nth-child(even){
+    background: #56a79a;
+    color: #fff;
+}
+
+/* Contact */
+.contact form{
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.contact form input[type="text"]{
+    width: 50%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.contact form textarea{
+    width: 50%;
+    height: 100px;
+}
+
+.contact form button{
+    width: 50%;
+    padding: 10px 0;
+    border: 0;
+    background-color: #222;
+    color: #fff;
+}
+
+.contact form label{
+    text-transform: uppercase;
+}
+
+/* Subheader */
+#subheader{
+    background: #333;
+    color: #fff;
+}
+
+/* Media Queries */
+@media(max-width:880px){
+    #showcase h1{
+        font-size: 30px;
+    }
+}
+
+@media(max-width:500px){
+    #showcase .showcase-content{
+        padding: 40px 10px;
+    }
+}
